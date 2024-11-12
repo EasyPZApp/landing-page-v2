@@ -9,7 +9,6 @@ export default function Footer() {
                 {/* Twitter icon */}
               </a>
               <a href="/faq" className="hover:opacity-80">FAQ</a>
-              <a href="mailto:support@easypz.app" className="hover:opacity-80">Contact</a>
               <a href="/privacy" className="hover:opacity-80">Privacy Policy</a>
               <a href="/terms" className="hover:opacity-80">Terms and Conditions</a>
             </div>
