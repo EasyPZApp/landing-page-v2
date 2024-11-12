@@ -1,5 +1,26 @@
+import type { Metadata } from 'next'
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+
+export const metadata: Metadata = {
+    title: 'Terms & Conditions | EasyPZ',
+    description: 'Read the terms and conditions for using EasyPZ, the app that helps you find clean and accessible restrooms in Berlin & NYC.',
+    openGraph: {
+      title: 'Terms & Conditions | EasyPZ',
+      description: 'Read the terms and conditions for using EasyPZ, the app that helps you find clean and accessible restrooms in Berlin & NYC.',
+      url: 'https://easypz.app/terms',
+      siteName: 'EasyPZ',
+      type: 'website',
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title: 'Terms & Conditions | EasyPZ',
+      description: 'Read the terms and conditions for using EasyPZ, the app that helps you find clean and accessible restrooms in Berlin & NYC.',
+    },
+    alternates: {
+      canonical: 'https://easypz.app/terms'
+    }
+  }
 
 export default function Terms() {
   return (

@@ -1,5 +1,27 @@
-import Navbar from "@/components/Navbar";
-import Footer from "@/components/Footer";
+import type { Metadata } from 'next'
+import Navbar from '@/components/Navbar'
+import Footer from '@/components/Footer'
+import Link from 'next/link'
+
+export const metadata: Metadata = {
+    title: 'Privacy Policy | EasyPZ',
+    description: 'Learn about how EasyPZ handles and protects your data. Our privacy policy outlines our commitment to user privacy and data protection.',
+    openGraph: {
+      title: 'Privacy Policy | EasyPZ',
+      description: 'Learn about how EasyPZ handles and protects your data. Our privacy policy outlines our commitment to user privacy and data protection.',
+      url: 'https://easypz.app/privacy',
+      siteName: 'EasyPZ',
+      type: 'website',
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title: 'Privacy Policy | EasyPZ',
+      description: 'Learn about how EasyPZ handles and protects your data. Our privacy policy outlines our commitment to user privacy and data protection.',
+    },
+    alternates: {
+      canonical: 'https://easypz.app/privacy'
+    }
+  }
 
 export default function Privacy() {
   return (
