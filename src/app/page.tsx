@@ -2,6 +2,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
+import ScrollDownButton from '@/components/ScrollDownButton' 
 import AnimationWrapper from '@/components/AnimationWrapper'
 
 export default function Home() {
@@ -171,6 +172,7 @@ export default function Home() {
           </div>
         </section>
       </main>
+      <ScrollDownButton />
       <Footer />
     </AnimationWrapper>
   );
