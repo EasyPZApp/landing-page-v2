@@ -27,14 +27,15 @@ export const palette = {
       900: '#3A3A3C',
     },
     yellow: '#FFCB45',
-    white: '#FFFFFF'
+    white: '#FFFFFF',
+    almostBlack: '#1A1A1A'  // Added almost black color
   } as const;
   
   export const theme = {
     light: {
       ...palette,
       background: '#FFFFFF',
-      text: '#000000',
+      text: palette.almostBlack,  // Updated to use almost black
       textSecondary: palette.gray[600],
     },
     dark: {

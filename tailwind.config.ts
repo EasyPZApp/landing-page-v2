@@ -9,6 +9,7 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
+        'almost-black': '#1A1A1A',
         primary: '#79BEE1',
         'primary-tint': {
           100: '#F0F8FC',

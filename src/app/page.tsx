@@ -1,4 +1,3 @@
-// src/app/page.tsx
 import Image from 'next/image'
 import Link from 'next/link'
 import Navbar from '@/components/Navbar'
@@ -11,10 +10,10 @@ export default function Home() {
       <main className="mt-16 mx-auto max-w-7xl px-4 sm:px-6">
         {/* Hero Section */}
         <section className="py-16 text-center">
-          <h1 className="font-asap font-semibold text-4xl sm:text-5xl mb-4">
-            "Hello?<br/>This is nature."
+          <h1 className="font-asap font-semibold text-4xl sm:text-5xl mb-4 text-almost-black">
+            "Hello,<br/>This is nature."
           </h1>
-          <p className="font-mukta-vaani text-xl mb-8">
+          <p className="font-mukta-vaani text-xl mb-8 text-gray-700">
             When nature calls, be ready for it.<br/>
             Out now in Berlin & NYC
           </p>
@@ -49,16 +48,16 @@ export default function Home() {
 
         {/* Problem Section */}
         <section className="py-16 text-center">
-          <span className="text-gray-600">The Problem</span>
-          <h2 className="font-asap font-semibold text-3xl mt-2 mb-6">
+          <span className="text-primary">The Problem</span>
+          <h2 className="font-asap font-semibold text-3xl mt-2 mb-6 text-almost-black">
             Need a toilet?
           </h2>
-          <p className="font-mukta-vaani text-lg max-w-2xl mx-auto">
+          <p className="font-mukta-vaani text-lg max-w-2xl mx-auto text-gray-700">
             When you're in an unfamiliar location and suddenly need to use the restroom, 
             it can be a real challenge to find a clean, safe, and convenient option.
           </p>
           <Image 
-            src="/images/person-searching.png"
+            src="/images/problem.gif"
             alt="Person searching for restroom"
             width={300}
             height={300}
@@ -68,24 +67,24 @@ export default function Home() {
 
         {/* Solution Section */}
         <section className="py-16 text-center">
-          <span className="text-gray-600">The Solution</span>
-          <h2 className="font-asap font-semibold text-3xl mt-2 mb-6">
+          <span className="text-primary">The Solution</span>
+          <h2 className="font-asap font-semibold text-3xl mt-2 mb-6 text-almost-black">
             Meet Zima
           </h2>
-          <p className="font-mukta-vaani text-lg max-w-2xl mx-auto">
+          <p className="font-mukta-vaani text-lg max-w-2xl mx-auto text-gray-700">
             A magical cat with extraordinary powers to locate the nearest and cleanest restrooms. 
             Just open the app, and let Zima guide you to your destination.
           </p>
           <div className="space-y-8 mt-8">
             <Image 
-              src="/images/zima-placeholder.png"
+              src="/images/zima-power.gif"
               alt="Zima the magical cat"
               width={300}
               height={300}
               className="mx-auto"
             />
             <Image 
-              src="/images/app-screenshot.png"
+              src="/images/app-demo.png"
               alt="EasyPZ app interface"
               width={300}
               height={600}
@@ -96,10 +95,10 @@ export default function Home() {
 
         {/* Ready to go Section */}
         <section className="py-16 text-center">
-          <h2 className="font-asap font-semibold text-3xl mb-4">
+          <h2 className="font-asap font-semibold text-3xl mb-4 text-almost-black">
             Ready to go? 🚽
           </h2>
-          <p className="font-mukta-vaani text-lg mb-8">
+          <p className="font-mukta-vaani text-lg mb-8 text-gray-700">
             Download EasyPZ now and never worry about finding a restroom again.
           </p>
           <div className="flex justify-center gap-4">
