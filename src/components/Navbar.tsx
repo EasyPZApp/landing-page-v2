@@ -18,12 +18,6 @@ export default function Navbar() {
           {/* For mobile, let's show a simple navigation menu */}
           <nav className="flex space-x-6">
             <Link 
-              href="/cities" 
-              className="font-mukta-vaani text-gray-700 text-lg flex items-center"
-            >
-              Cities
-            </Link>
-            <Link 
               href="/faq" 
               className="font-mukta-vaani text-gray-700 text-lg flex items-center"
             >

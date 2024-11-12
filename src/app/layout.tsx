@@ -1,5 +1,12 @@
-import { Asap, Mukta_Vaani } from 'next/font/google'
+import { Raleway, Asap, Mukta_Vaani } from 'next/font/google'
 import './globals.css'
+
+const raleway = Raleway({ 
+  subsets: ['latin'],
+  weight: ['800'],
+  style: ['italic'],
+  variable: '--font-raleway'
+})
 
 const asap = Asap({ 
   subsets: ['latin'],
