@@ -17,12 +17,6 @@ export default function Navbar() {
           </Link>
           {/* For mobile, let's show a simple navigation menu */}
           <nav className="flex space-x-6">
-            <Link 
-              href="/faq" 
-              className="font-mukta-vaani text-gray-700 text-lg flex items-center"
-            >
-              FAQ
-            </Link>
           </nav>
         </div>
       </div>

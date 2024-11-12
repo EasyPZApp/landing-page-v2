@@ -73,9 +73,8 @@ export default function FAQ() {
             </p>
             <br></br>
             <p className="text-gray-700 font-mukta-vaani">
-              Are you a municipal official who wants EasyPZ expand to another
-              city? This can be easily achieved. Please contact us at
-              support@easypz.app.
+              Are you a municipal representative that wants EasyPZ in your
+              city? Please contact us at support@easypz.app.
             </p>
           </div>
 

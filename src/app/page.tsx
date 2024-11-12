@@ -12,52 +12,53 @@ export default function Home() {
       <main className="mt-16 mx-auto max-w-7xl px-4 sm:px-6">
         {/* Hero Section */}
         <section className="min-h-[80vh] py-16 flex flex-col justify-center text-center">
-          <h1 className="hero-title opacity-0 font-raleway font-extrabold italic text-4xl sm:text-5xl mb-4 text-almost-black tracking-[0]  leading-tight">
-  "Hello,
-  <br />
-  This is nature."
-</h1>
-          <p className="hero-subtitle opacity-0 font-mukta-vaani text-xl mb-8 text-gray-700">
-            When nature calls, be ready for it.
-            <br />
-            Out now in Berlin & NYC
-          </p>
-          <div className="hero-buttons opacity-0 flex justify-center gap-4 mb-12">
-            <Link
-              href="https://apps.apple.com/us/app/easypz/id6448388765"
-              className="transform transition-transform active:scale-95"
-            >
-              <Image
-                src="/images/store-ios.png"
-                alt="Download on the App Store"
-                width={150}
-                height={44}
-                className="h-11 w-auto"
-              />
-            </Link>
-            <Link
-              href="https://play.google.com/store/apps/details?id=com.beelphegor91.easypz"
-              className="transform transition-transform active:scale-95"
-            >
-              <Image
-                src="/images/store-android.png"
-                alt="Get it on Google Play"
-                width={150}
-                height={44}
-                className="h-11 w-auto"
-              />
-            </Link>
-          </div>
-          <div className="hero-image opacity-0">
-            <Image
-              src="/images/cat-toilet.png"
-              alt="Cat on toilet paper"
-              width={300}
-              height={300}
-              className="mx-auto"
-            />
-          </div>
-        </section>
+  <h1 className="hero-title opacity-0 font-raleway font-extrabold italic text-4xl sm:text-5xl mb-3 text-almost-black tracking-[0] leading-tight animate-slide-fade-in">
+    "Hello,
+    <br />
+    This is nature."
+  </h1>
+  <p className="opacity-0 font-mukta-vaani text-xl text-gray-700 animate-fade-in-delayed-1">
+    When nature calls, be ready for it.
+  </p>
+  <p className="opacity-0 font-mukta-vaani text-xl mb-4 text-gray-700 animate-fade-in-delayed-2">
+    Out now in Berlin & NYC
+  </p>
+  <div className="opacity-0 flex justify-center gap-4 mb-12 animate-fade-in-delayed-3">
+    <Link
+      href="https://apps.apple.com/us/app/easypz/id6448388765"
+      className="transform transition-transform active:scale-95"
+    >
+      <Image
+        src="/images/store-ios.png"
+        alt="Download on the App Store"
+        width={150}
+        height={44}
+        className="h-11 w-auto"
+      />
+    </Link>
+    <Link
+      href="https://play.google.com/store/apps/details?id=com.beelphegor91.easypz"
+      className="transform transition-transform active:scale-95"
+    >
+      <Image
+        src="/images/store-android.png"
+        alt="Get it on Google Play"
+        width={150}
+        height={44}
+        className="h-11 w-auto"
+      />
+    </Link>
+  </div>
+  <div className="opacity-0 animate-fade-in-delayed-4">
+    <Image
+      src="/images/cat-toilet.png"
+      alt="Cat on toilet paper"
+      width={300}
+      height={300}
+      className="mx-auto"
+    />
+  </div>
+</section>
 
         {/* Problem Section */}
         <section className="content-section py-16 text-center">

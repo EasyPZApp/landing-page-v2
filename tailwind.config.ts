@@ -63,10 +63,6 @@ const config: Config = {
         semibold: '600'
       },
       keyframes: {
-        'fade-in': {
-          '0%': { opacity: '0', transform: 'translateY(10px)' },
-          '100%': { opacity: '1', transform: 'translateY(0)' },
-        },
         'fade-up': {
           '0%': { opacity: '0', transform: 'translateY(20px)' },
           '100%': { opacity: '1', transform: 'translateY(0)' },
@@ -92,6 +88,20 @@ const config: Config = {
           '0%, 100%': { transform: 'translateY(0)' },
           '50%': { transform: 'translateY(-8px)' },
         },
+        'slide-fade-in': {
+          '0%': { 
+            opacity: '0',
+            transform: 'translateX(-50px)'
+          },
+          '100%': { 
+            opacity: '1',
+            transform: 'translateX(0)'
+          },
+        },
+        'fade-in': {
+          '0%': { opacity: '0' },
+          '100%': { opacity: '1' },
+        },
       },
       animation: {
         'fade-in': 'fade-in 0.5s ease-out forwards',
@@ -103,6 +113,11 @@ const config: Config = {
         'pulse-gentle': 'pulse-gentle 2s ease-in-out infinite',
         'scale-button': 'scale-button 0.3s ease-out',
         'float': 'float 6s ease-in-out infinite',
+        'slide-fade-in': 'slide-fade-in 0.8s ease-out forwards',
+        'fade-in-delayed-1': 'fade-up 0.5s ease-out forwards 1.0s',  // After title
+        'fade-in-delayed-2': 'fade-up 0.5s ease-out forwards 2.0s',  // After first line
+        'fade-in-delayed-3': 'fade-up 0.5s ease-out forwards 2.0s',  // After second line
+        'fade-in-delayed-4': 'fade-up 0.5s ease-out forwards 2.6s',
       },
     },
   },
