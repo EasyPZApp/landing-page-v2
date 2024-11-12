@@ -15,13 +15,21 @@ export default function Navbar() {
               className="h-8 w-auto"
             />
           </Link>
-          <div className="hidden md:flex items-center space-x-8">
-            <Link href="#problem" className="font-mukta-vaani text-gray-600 hover:text-primary">The Problem</Link>
-            <Link href="#solution" className="font-mukta-vaani text-gray-600 hover:text-primary">The Solution</Link>
-            <Link href="/cities" className="font-mukta-vaani text-gray-600 hover:text-primary">Cities</Link>
-            <Link href="/about" className="font-mukta-vaani text-gray-600 hover:text-primary">About</Link>
-            <Link href="/faq" className="font-mukta-vaani text-gray-600 hover:text-primary">FAQ</Link>
-          </div>
+          {/* For mobile, let's show a simple navigation menu */}
+          <nav className="flex space-x-6">
+            <Link 
+              href="/cities" 
+              className="font-mukta-vaani text-gray-700 text-lg flex items-center"
+            >
+              Cities
+            </Link>
+            <Link 
+              href="/faq" 
+              className="font-mukta-vaani text-gray-700 text-lg flex items-center"
+            >
+              FAQ
+            </Link>
+          </nav>
         </div>
       </div>
     </nav>
