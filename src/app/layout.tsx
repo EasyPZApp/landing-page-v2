@@ -4,8 +4,9 @@ import './globals.css'
 const raleway = Raleway({ 
   subsets: ['latin'],
   weight: ['800'],
-  style: ['italic'],
-  variable: '--font-raleway'
+  style: ['italic', 'normal'],
+  variable: '--font-raleway',
+  display: 'swap',
 })
 
 const asap = Asap({ 
@@ -26,7 +27,7 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en" className={`${asap.variable} ${muktaVaani.variable}`}>
+    <html lang="en" className={`${raleway.variable} ${asap.variable} ${muktaVaani.variable}`}>
       <body className="min-h-screen bg-white">
         {children}
       </body>

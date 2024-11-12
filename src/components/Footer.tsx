@@ -8,12 +8,12 @@ export default function Footer() {
                 <span className="sr-only">Twitter</span>
                 {/* Twitter icon */}
               </a>
-              <a href="mailto:support@easypz.app" className="hover:opacity-80">FAQ</a>
+              <a href="/faq" className="hover:opacity-80">FAQ</a>
               <a href="mailto:support@easypz.app" className="hover:opacity-80">Contact</a>
-              <a href="mailto:support@easypz.app" className="hover:opacity-80">Privacy Policy</a>
-              <a href="mailto:support@easypz.app" className="hover:opacity-80">Terms and Conditions</a>
+              <a href="/privacy" className="hover:opacity-80">Privacy Policy</a>
+              <a href="/terms" className="hover:opacity-80">Terms and Conditions</a>
             </div>
-            <p className="text-sm text-center">© 2024 EasyPZ. Personal project by "El Vagabundo"</p>
+            <p className="text-sm text-center">© 2024 EasyPZ, created by "El Vagabundo"</p>
           </div>
         </div>
       </footer>

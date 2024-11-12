@@ -11,11 +11,11 @@ export default function Home() {
       <main className="mt-16 mx-auto max-w-7xl px-4 sm:px-6">
         {/* Hero Section */}
         <section className="min-h-[80vh] py-16 flex flex-col justify-center text-center">
-          <h1 className="hero-title opacity-0 font-raleway font-extrabold italic text-4xl sm:text-5xl mb-4 text-almost-black">
-            "Hello,
-            <br />
-            this is nature."
-          </h1>
+          <h1 className="hero-title opacity-0 font-raleway font-extrabold italic text-4xl sm:text-5xl mb-4 text-almost-black tracking-[0]  leading-tight">
+  "Hello,
+  <br />
+  This is nature."
+</h1>
           <p className="hero-subtitle opacity-0 font-mukta-vaani text-xl mb-8 text-gray-700">
             When nature calls, be ready for it.
             <br />
