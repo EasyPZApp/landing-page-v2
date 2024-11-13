@@ -4,6 +4,8 @@ import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
 import ScrollDownButton from '@/components/ScrollDownButton' 
 import AnimationWrapper from '@/components/AnimationWrapper'
+import InteractiveZima from '@/components/InteractiveZima'
+
 
 export default function Home() {
   return (
@@ -51,7 +53,7 @@ export default function Home() {
   </div>
   <div className="opacity-0 animate-fade-in-delayed-4">
     <Image
-      src="/images/cat-toilet.png"
+      src="/images/cat-toilet.gif"
       alt="Cat on toilet paper"
       width={300}
       height={300}
@@ -111,22 +113,16 @@ export default function Home() {
           </p>
           <div className="space-y-8 mt-8">
             <div className="opacity-0" data-animate>
-              <Image
-                src="/images/zima-power.gif"
-                alt="Zima the magical cat"
-                width={300}
-                height={300}
-                className="mx-auto"
-              />
-            </div>
-            <div className="opacity-0" data-animate>
-              <Image
-                src="/images/app-demo.png"
-                alt="EasyPZ app interface"
-                width={300}
-                height={600}
-                className="mx-auto"
-              />
+            <InteractiveZima />
+              <div className="opacity-0" data-animate>
+                <Image
+                  src="/images/app-demo.png"
+                  alt="EasyPZ app interface"
+                  width={300}
+                  height={600}
+                  className="mx-auto"
+                />
+              </div>
             </div>
           </div>
         </section>
@@ -143,7 +139,7 @@ export default function Home() {
             className="font-mukta-vaani text-lg mb-8 text-gray-700 opacity-0"
             data-animate
           >
-            Download EasyPZ now and never worry about finding a restroom again.
+            EasyPZ is 5x faster than Google or Apple Maps.<br></br>Download today and never worry about finding a restroom.
           </p>
           <div className="flex justify-center gap-4 opacity-0" data-animate>
             <Link

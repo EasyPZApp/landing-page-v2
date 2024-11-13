@@ -68,8 +68,8 @@ export default function FAQ() {
               EasyPZ is currently available in select cities, starting with{" "}
               <span className="font-semibold">Berlin</span> and{" "}
               <span className="font-semibold">New York City</span>. We are
-              continuously expanding to other cities, so stay tuned for updates
-              on new locations. You can follow us on X or Instagram.
+              continuously expanding our database, so stay tuned for updates
+              on new locations. You can follow us on X or Instagram in the meantime.
             </p>
             <br></br>
             <p className="text-gray-700 font-mukta-vaani">
@@ -100,8 +100,7 @@ export default function FAQ() {
             <p className="text-gray-700 font-mukta-vaani">
               If you'd like to share restroom locations (or lists) please write
               us a message at support@easypz.app. This feature will be
-              restricted in order to protect the quality of the database and its
-              integrity.
+              restricted in order to protect the quality of the database.
             </p>
           </div>
 
@@ -158,7 +157,7 @@ export default function FAQ() {
               widely across different places and saw that finding a restroom can
               be a challenge everywhere. He decided to take action, believing
               that improving restroom access globally could make a real
-              difference and elevate the state of society.
+              difference and elevate the current state of society.
             </p>
           </div>
 
