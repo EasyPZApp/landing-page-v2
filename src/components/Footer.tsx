@@ -6,9 +6,9 @@ export default function Footer() {
   return (
     <footer className="bg-primary text-white py-12">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2">
           {/* Logo and Tagline Section */}
-          <div className="flex flex-col items-center md:items-start space-y-4">
+          <div className="flex flex-col items-center md:items-start space-y-2 mb-4">
             <Link href="/" className="flex items-center space-x-2">
               <Image
                 src="/images/logo-white.png"
@@ -24,7 +24,20 @@ export default function Footer() {
           </div>
 
           {/* Links and Social Section */}
-          <div className="flex flex-col items-center md:items-start space-y-6">
+          <div className="flex flex-col items-center md:items-start space-y-4">
+
+            {/* Links Section */}
+            <div className="flex flex-col items-center md:items-start space-y-1">
+              <Link href="/terms" className="hover:text-white/80 transition-colors">
+                Terms and Conditions
+              </Link>
+              <Link href="/privacy" className="hover:text-white/80 transition-colors">
+                Privacy Policy
+              </Link>
+              <Link href="/faq" className="hover:text-white/80 transition-colors">
+                FAQ
+              </Link>
+            </div>
             {/* Social Media Section */}
             <div className="flex space-x-4">
               <a 
@@ -45,19 +58,6 @@ export default function Footer() {
                 <Instagram size={24} />
                 <span className="sr-only">Instagram</span>
               </a>
-            </div>
-
-            {/* Links Section */}
-            <div className="flex flex-col items-center md:items-start space-y-2">
-              <Link href="/terms" className="hover:text-white/80 transition-colors">
-                Terms and Conditions
-              </Link>
-              <Link href="/privacy" className="hover:text-white/80 transition-colors">
-                Privacy Policy
-              </Link>
-              <Link href="/faq" className="hover:text-white/80 transition-colors">
-                FAQ
-              </Link>
             </div>
           </div>
         </div>
