@@ -13,6 +13,15 @@ export default function Home() {
       <main className="mt-16 mx-auto max-w-7xl px-4 sm:px-6">
         {/* Hero Section */}
         <section className="min-h-[80vh] py-16 flex flex-col justify-center text-center">
+          <div className="mb-4">
+            <Image
+              src="/images/marker-primary.png"
+              alt=""
+              width={24}
+              height={24}
+              className="mx-auto"
+            />
+          </div>
           <h1 className="hero-title opacity-0 font-raleway font-extrabold italic text-4xl sm:text-5xl mb-3 text-almost-black tracking-[0] leading-tight animate-slide-fade-in">
             "Hello,
             <br />

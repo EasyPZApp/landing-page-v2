@@ -1,3 +1,4 @@
+import type { Metadata } from 'next'
 import { Raleway, Asap, Mukta_Vaani } from 'next/font/google'
 import './globals.css'
 
@@ -20,6 +21,30 @@ const muktaVaani = Mukta_Vaani({
   weight: ['400', '500', '600'],
   variable: '--font-mukta-vaani'
 })
+
+export const metadata: Metadata = {
+  title: {
+    template: '%s | EasyPZ',
+    default: 'EasyPZ - Find Restrooms Quickly & Easily',
+  },
+  description: 'EasyPZ helps you find clean and accessible restrooms in Berlin & NYC. 5x faster than Google or Apple Maps.',
+  icons: {
+    icon: [
+      {
+        url: 'images/favicon.png',
+        type: 'image/png',
+      },
+    ],
+    other: [
+      {
+        rel: 'icon',
+        type: 'image/png',
+        sizes: '192x192',
+        url: '/android-icon-192x192.png'
+      }
+    ]
+  }
+}
 
 export default function RootLayout({
   children,
