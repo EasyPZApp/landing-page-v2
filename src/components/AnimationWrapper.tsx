@@ -50,7 +50,7 @@ export default function AnimationWrapper({
           elements.forEach((element, index) => {
             setTimeout(() => {
               element.classList.remove('opacity-0');
-              element.classList.add('animate-fade-in');
+              element.classList.add('animate-fade-up');
             }, index * 250);
           });
 
