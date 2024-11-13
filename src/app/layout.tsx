@@ -1,5 +1,13 @@
-import { Asap, Mukta_Vaani } from 'next/font/google'
+import { Raleway, Asap, Mukta_Vaani } from 'next/font/google'
 import './globals.css'
+
+const raleway = Raleway({ 
+  subsets: ['latin'],
+  weight: ['800'],
+  style: ['italic', 'normal'],
+  variable: '--font-raleway',
+  display: 'swap',
+})
 
 const asap = Asap({ 
   subsets: ['latin'],
@@ -19,7 +27,7 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en" className={`${asap.variable} ${muktaVaani.variable}`}>
+    <html lang="en" className={`${raleway.variable} ${asap.variable} ${muktaVaani.variable}`}>
       <body className="min-h-screen bg-white">
         {children}
       </body>

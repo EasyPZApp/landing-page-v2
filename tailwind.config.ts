@@ -9,6 +9,8 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
+        background: 'var(--background)',
+        foreground: 'var(--foreground)',
         'almost-black': '#1A1A1A',
         primary: '#79BEE1',
         'primary-tint': {
@@ -40,6 +42,7 @@ const config: Config = {
         yellow: '#FFCB45',
       },
       fontFamily: {
+        raleway: ['var(--font-raleway)', 'sans-serif'],
         asap: ['Asap', 'sans-serif'],
         'mukta-vaani': ['Mukta Vaani', 'sans-serif'],
       },
@@ -60,18 +63,67 @@ const config: Config = {
         semibold: '600'
       },
       keyframes: {
-        'fade-in': {
-          '0%': { opacity: '0', transform: 'translateY(10px)' },
+        'fade-up': {
+          '0%': { opacity: '0', transform: 'translateY(20px)' },
           '100%': { opacity: '1', transform: 'translateY(0)' },
-        }
+        },
+        'bounce-gentle': {
+          '0%, 100%': { transform: 'translateY(0)' },
+          '50%': { transform: 'translateY(-10px)' },
+        },
+        'bounce-subtle': {
+          '0%, 100%': { transform: 'translateY(0)' },
+          '50%': { transform: 'translateY(-5px)' },
+        },
+        'pulse-gentle': {
+          '0%, 100%': { opacity: '1' },
+          '50%': { opacity: '0.8' },
+        },
+        'scale-button': {
+          '0%': { transform: 'scale(1)' },
+          '50%': { transform: 'scale(1.05)' },
+          '100%': { transform: 'scale(1)' },
+        },
+        float: {
+          '0%, 100%': { transform: 'translateY(0)' },
+          '50%': { transform: 'translateY(-8px)' },
+        },
+        'slide-fade-in': {
+          '0%': { 
+            opacity: '0',
+            transform: 'translateX(-50px)'
+          },
+          '100%': { 
+            opacity: '1',
+            transform: 'translateX(0)'
+          },
+        },
+        'fade-in': {
+          '0%': { opacity: '0' },
+          '100%': { opacity: '1' },
+        },
       },
       animation: {
         'fade-in': 'fade-in 0.5s ease-out forwards',
         'fade-in-delay': 'fade-in 0.5s ease-out 0.2s forwards',
+        'fade-in-scroll': 'fade-in 0.5s ease-out forwards',
+        'fade-up': 'fade-up 0.7s ease-out forwards',
+        'bounce-gentle': 'bounce-gentle 3s ease-in-out infinite',
+        'bounce-subtle': 'bounce-subtle 3s ease-in-out infinite',
+        'pulse-gentle': 'pulse-gentle 2s ease-in-out infinite',
+        'scale-button': 'scale-button 0.3s ease-out',
+        'float': 'float 6s ease-in-out infinite',
+        'slide-fade-in': 'slide-fade-in 0.8s ease-out forwards',
+        'fade-in-delayed-1': 'fade-up 0.5s ease-out forwards 1.0s',  // After title
+        'fade-in-delayed-2': 'fade-up 0.5s ease-out forwards 2.0s',  // After first line
+        'fade-in-delayed-3': 'fade-up 0.5s ease-out forwards 2.0s',  // After second line
+        'fade-in-delayed-4': 'fade-up 0.5s ease-out forwards 2.6s',
       },
     },
   },
-  plugins: [],
+  plugins: [
+    require('@tailwindcss/typography'),
+  ],
 }
 
 export default config

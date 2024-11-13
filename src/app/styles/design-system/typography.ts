@@ -1,4 +1,5 @@
 export const fontFamilies = {
+  raleway: 'Raleway', 
   asap: 'Asap',      // For headers
   muktaVaani: 'Mukta Vaani'  // For body and help text
 } as const;
@@ -18,7 +19,8 @@ export const fontSizes = {
 export const fontWeights = {
   regular: '400',
   medium: '500',
-  semibold: '600'
+  semibold: '600',
+  extrabold: '800'
 } as const;
 
 export const typography = {
@@ -26,72 +28,78 @@ export const typography = {
     regular: {
       fontFamily: fontFamilies.asap,
       fontWeight: fontWeights.regular,
-      fontSize: fontSizes['2xl']
+      fontSize: fontSizes["2xl"],
     },
     semibold: {
       fontFamily: fontFamilies.asap,
       fontWeight: fontWeights.semibold,
-      fontSize: fontSizes['2xl']
-    }
+      fontSize: fontSizes["2xl"],
+    },
+    extrabold: {
+      fontFamily: fontFamilies.raleway,
+      fontWeight: fontWeights.extrabold,
+      fontStyle: "italic",
+      fontSize: fontSizes["4xl"],
+    },
   },
   h2: {
     regular: {
       fontFamily: fontFamilies.asap,
       fontWeight: fontWeights.regular,
-      fontSize: fontSizes.xl
+      fontSize: fontSizes.xl,
     },
     semibold: {
       fontFamily: fontFamilies.asap,
       fontWeight: fontWeights.semibold,
-      fontSize: fontSizes.xl
-    }
+      fontSize: fontSizes.xl,
+    },
   },
   h3: {
     regular: {
       fontFamily: fontFamilies.asap,
       fontWeight: fontWeights.regular,
-      fontSize: fontSizes.md
+      fontSize: fontSizes.md,
     },
     semibold: {
       fontFamily: fontFamilies.asap,
       fontWeight: fontWeights.semibold,
-      fontSize: fontSizes.md
-    }
+      fontSize: fontSizes.md,
+    },
   },
   body: {
     large: {
       fontFamily: fontFamilies.muktaVaani,
       fontWeight: fontWeights.regular,
-      fontSize: fontSizes.lg
+      fontSize: fontSizes.lg,
     },
     regular: {
       fontFamily: fontFamilies.muktaVaani,
       fontWeight: fontWeights.regular,
-      fontSize: fontSizes.md
+      fontSize: fontSizes.md,
     },
     semibold: {
       fontFamily: fontFamilies.muktaVaani,
       fontWeight: fontWeights.semibold,
-      fontSize: fontSizes.md
+      fontSize: fontSizes.md,
     },
     small: {
       regular: {
         fontFamily: fontFamilies.muktaVaani,
         fontWeight: fontWeights.regular,
-        fontSize: fontSizes.sm
+        fontSize: fontSizes.sm,
       },
       semibold: {
         fontFamily: fontFamilies.muktaVaani,
         fontWeight: fontWeights.semibold,
-        fontSize: fontSizes.sm
-      }
-    }
+        fontSize: fontSizes.sm,
+      },
+    },
   },
   helpText: {
     fontFamily: fontFamilies.muktaVaani,
     fontWeight: fontWeights.medium,
-    fontSize: fontSizes.sm
-  }
+    fontSize: fontSizes.sm,
+  },
 } as const;
 
 export type Typography = typeof typography;
