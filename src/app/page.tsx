@@ -12,7 +12,7 @@ export default function Home() {
       <Navbar />
       <main className="mt-16 mx-auto max-w-7xl px-4 sm:px-6">
         {/* Hero Section */}
-        <section className="min-h-[80vh] py-16 flex flex-col justify-center text-center">
+        <section className="min-h-[80vh] py-8 flex flex-col justify-center text-center">
           <div className="mb-4">
             <Image
               src="/images/marker-primary.png"
@@ -33,7 +33,7 @@ export default function Home() {
           <p className="opacity-0 font-mukta-vaani text-xl mb-4 text-gray-700 animate-fade-in-delayed-2">
             Out now in Berlin & NYC
           </p>
-          <div className="opacity-0 flex justify-center gap-4 mb-12 animate-fade-in-delayed-3">
+          <div className="opacity-0 flex justify-center gap-4 mb-6 animate-fade-in-delayed-3">
             <Link
               href="https://apps.apple.com/us/app/easypz/id6448388765"
               className="transform transition-transform active:scale-95"
@@ -63,8 +63,8 @@ export default function Home() {
             <Image
               src="/images/cat-toilet.gif"
               alt="Cat on toilet paper"
-              width={300}
-              height={300}
+              width={400}
+              height={400}
               className="mx-auto"
             />
           </div>
