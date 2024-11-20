@@ -5,6 +5,7 @@ import Footer from "@/components/Footer";
 import ScrollDownButton from "@/components/ScrollDownButton";
 import AnimationWrapper from "@/components/AnimationWrapper";
 import InteractiveZima from "@/components/InteractiveZima";
+import StoreButtons from "@/components/StoreButtons";
 
 export default function Home() {
   return (
@@ -33,32 +34,10 @@ export default function Home() {
           <p className="opacity-0 font-mukta-vaani text-xl mb-4 text-gray-700 animate-fade-in-delayed-2">
             Out now in Berlin & NYC
           </p>
-          <div className="opacity-0 flex justify-center gap-4 mb-6 animate-fade-in-delayed-3">
-            <Link
-              href="https://apps.apple.com/us/app/easypz/id6448388765"
-              className="transform transition-transform active:scale-95"
-            >
-              <Image
-                src="/images/store-ios.png"
-                alt="Download on the App Store"
-                width={150}
-                height={44}
-                className="h-11 w-auto"
-              />
-            </Link>
-            <Link
-              href="https://play.google.com/store/apps/details?id=com.beelphegor91.easypz"
-              className="transform transition-transform active:scale-95"
-            >
-              <Image
-                src="/images/store-android.png"
-                alt="Get it on Google Play"
-                width={150}
-                height={44}
-                className="h-11 w-auto"
-              />
-            </Link>
-          </div>
+          <StoreButtons 
+            className="mb-6" 
+            animationClass="opacity-0 animate-fade-in-delayed-3" 
+          />
           <div className="opacity-0 animate-fade-in-delayed-4">
             <Image
               src="/images/cat-toilet.gif"
@@ -154,32 +133,10 @@ export default function Home() {
             today and never worry about finding a restroom.<br></br>It's
             completely free and no sign-up required!
           </p>
-          <div className="flex justify-center gap-4 opacity-0" data-animate>
-            <Link
-              href="https://apps.apple.com/us/app/easypz/id6448388765"
-              className="transform transition-transform active:scale-95"
-            >
-              <Image
-                src="/images/store-ios.png"
-                alt="Download on the App Store"
-                width={150}
-                height={44}
-                className="h-11 w-auto"
-              />
-            </Link>
-            <Link
-              href="https://play.google.com/store/apps/details?id=com.beelphegor91.easypz"
-              className="transform transition-transform active:scale-95"
-            >
-              <Image
-                src="/images/store-android.png"
-                alt="Get it on Google Play"
-                width={150}
-                height={44}
-                className="h-11 w-auto"
-              />
-            </Link>
-          </div>
+          <StoreButtons 
+            className="mb-6" 
+            animationClass="opacity-0 animate-fade-in-delayed-3" 
+          />
         </section>
       </main>
       <ScrollDownButton />
