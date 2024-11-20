@@ -34,9 +34,9 @@ export default function Home() {
           <p className="opacity-0 font-mukta-vaani text-xl mb-4 text-gray-700 animate-fade-in-delayed-2">
             Out now in Berlin & NYC
           </p>
-          <StoreButtons 
-            className="mb-6" 
-            animationClass="opacity-0 animate-fade-in-delayed-3" 
+          <StoreButtons
+            className="mb-6"
+            animationClass="opacity-0 animate-fade-in-delayed-3"
           />
           <div className="opacity-0 animate-fade-in-delayed-4">
             <Image
@@ -129,14 +129,13 @@ export default function Home() {
             className="font-mukta-vaani text-lg mb-8 text-gray-700 opacity-0"
             data-animate
           >
-            EasyPZ is up to 5x faster than Google or Apple Maps.<br></br>Download
-            today and never worry about finding a restroom.<br></br>It's
-            completely free and no sign-up required!
+            EasyPZ is up to 5x faster than Google or Apple Maps.<br></br>
+            Download today and never worry about finding a restroom.<br></br>
+            It's completely free and no sign-up required!
           </p>
-          <StoreButtons 
-            className="mb-6" 
-            animationClass="opacity-0 animate-fade-in-delayed-3" 
-          />
+          <div className="opacity-0" data-animate>
+            <StoreButtons className="mb-6" />
+          </div>
         </section>
       </main>
       <ScrollDownButton />
