@@ -124,15 +124,17 @@ export default function Home() {
           </div>
         </section>
         {/* App Demo Section */}
-        <section className="content-section py-16 text-center">
+        <section className="content-section min-h-[80vh] text-center">
           <div className="opacity-0" data-animate>
-            <Image
-              src="/images/app-demo.gif"
-              alt="EasyPZ app interface"
-              width={300}
-              height={600}
-              className="mx-auto"
-            />
+            <div className="relative w-full max-w-xs mx-auto h-[80vh]">
+              <Image
+                src="/images/app-demo.gif"
+                alt="EasyPZ app interface"
+                fill
+                className="object-contain"
+                priority
+              />
+            </div>
           </div>
         </section>
 
@@ -148,8 +150,9 @@ export default function Home() {
             className="font-mukta-vaani text-lg mb-8 text-gray-700 opacity-0"
             data-animate
           >
-            EasyPZ is 5x faster than Google or Apple Maps.<br></br>Download
-            today and never worry about finding a restroom.<br></br>It's completely free and no sign-up required!
+            EasyPZ is up to 5x faster than Google or Apple Maps.<br></br>Download
+            today and never worry about finding a restroom.<br></br>It's
+            completely free and no sign-up required!
           </p>
           <div className="flex justify-center gap-4 opacity-0" data-animate>
             <Link

@@ -68,13 +68,14 @@ export default function FAQ() {
               EasyPZ is currently available in select cities, starting with{" "}
               <span className="font-semibold">Berlin</span> and{" "}
               <span className="font-semibold">New York City</span>. We are
-              continuously expanding our database, so stay tuned for updates
-              on new locations. You can follow us on X or Instagram in the meantime.
+              continuously expanding our database, so stay tuned for updates on
+              new locations. You can follow us on X or Instagram in the
+              meantime.
             </p>
             <br></br>
             <p className="text-gray-700 font-mukta-vaani">
-              Are you a municipal representative that wants EasyPZ in your
-              city? Please contact us at support@easypz.app.
+              Are you a municipal representative that wants EasyPZ in your city?
+              Please contact us at support@easypz.app.
             </p>
           </div>
 
@@ -83,7 +84,12 @@ export default function FAQ() {
               Do you only show public restrooms?
             </h2>
             <p className="text-gray-700 font-mukta-vaani">
-              No, in addition to public restrooms provided by municipalities, we are also adding cafes, restaurants, museums, libraries, stores, and anything that may have an accessible restroom. We kindly remind our users to be mindful of each business's policies. EasyPZ is purely for informational purposes and we will do our best to forewarn you if you will be expected to pay to access a restroom.
+              No, in addition to public restrooms provided by municipalities, we
+              are also adding cafes, restaurants, museums, libraries, stores,
+              and anything that may have an accessible restroom. We kindly
+              remind our users to be mindful of each business's policies. EasyPZ
+              is purely for informational purposes and we will do our best to
+              forewarn you if you will be expected to pay to access a restroom.
             </p>
           </div>
 
@@ -107,7 +113,10 @@ export default function FAQ() {
               Can I add locations?
             </h2>
             <p className="text-gray-700 font-mukta-vaani">
-              In order to protect the integrity of the data, only the creator and a few selected members will have this feature enabled (for now). If you'd like to become one of these members, please do not hesitate to contact us below.
+              In order to protect the integrity of the data, only the creator
+              and a few selected members will have this feature enabled (for
+              now). If you'd like to become a member, please do not hesitate to
+              contact us below.
             </p>
           </div>
 
@@ -116,7 +125,12 @@ export default function FAQ() {
               Where are you getting the data from?
             </h2>
             <p className="text-gray-700 font-mukta-vaani">
-              Our restroom data is sourced from a combination of publicly available information, open data platforms, and contributions from our user community. We continuously work to verify and update this data to ensure it’s accurate and reliable for everyone. If you know of a restroom that’s not in our app, please get in contact! At a later date we will allow you to add it directly in the app.
+              Our restroom data is sourced from a combination of publicly
+              available information, open data platforms, and contributions from
+              our user community. We continuously work to verify and update this
+              data to ensure it’s accurate and reliable for everyone. If you
+              know of a restroom that’s not in our app, please get in contact!
+              At a later date we will allow you to add it directly in the app.
             </p>
           </div>
 
@@ -125,7 +139,15 @@ export default function FAQ() {
               What makes EasyPZ different from other apps?
             </h2>
             <p className="text-gray-700 font-mukta-vaani">
-              EasyPZ is designed to be the fastest and most convenient solution for “toilet emergencies.” Our app delivers reliable information on nearby restrooms, wherever you are. With a streamlined interface, EasyPZ is up to 5x faster than Google or Apple Maps (within our coverage areas) with better results. Unlike other apps that often lack a user-friendly experience or suffer from outdated data, EasyPZ stands out with intuitive design and a vibrant community that actively contributes to our growing, high-quality restroom database.
+              EasyPZ is designed to be the fastest and most convenient solution
+              for “toilet emergencies.” Our app delivers reliable information on
+              nearby restrooms, wherever you are. With a streamlined interface,
+              EasyPZ is up to 5x faster than Google or Apple Maps (within our
+              coverage areas) with better results. Unlike other apps that often
+              lack a user-friendly experience or suffer from outdated data,
+              EasyPZ stands out with intuitive design and a vibrant community
+              that actively contributes to our growing, high-quality restroom
+              database.
             </p>
           </div>
 
@@ -151,9 +173,12 @@ export default function FAQ() {
               Who created EasyPZ, and why?
             </h2>
             <p className="text-gray-700 font-mukta-vaani">
-              The creator of EasyPZ, aka El Vagabundo, is a world traveler who loves exploring the path less taken. In his travels, he saw how restroom access varies
-              widely across different places and saw that finding a restroom can
-              be a challenge everywhere. Believing that access to restrooms is a fundamental human need, El Vagabundo decided to dedicate his life to a new mission: help people everywhere reach a toilet within 5 minutes.
+              El Vagabundo is a traveler who values dignity, freedom, and adventure above all else. 
+              Through his journeys across civilizations, he asked himself, "What came first: civilization or the toilet?" and he decided that it was the latter. After all, every advanced society—no matter how imperfect—found a way to answer humanity’s oldest, most practical question: “Where should I go?”
+            </p>
+            <br></br>
+            <p className="text-gray-700 font-mukta-vaani">
+            Even today, our world struggles to answer this question. As a result, our dignity is often unprotected. El Vagabundo believes that for a society to call itself civilized, it must treat restrooms as a non-negotiable right. Without them, there’s no true civilization—just the illusion of one. Driven by this conviction, he created EasyPZ—not just for the world, but for himself. El Vagabundo stubbornly believes in the right to find a restroom within 5 minutes and that it’s the responsibility of society to guarantee it. Through EasyPZ, he aims to elevate the global standard for how we navigate our modern world—one restroom emergency at a time.
             </p>
           </div>
 
@@ -161,7 +186,14 @@ export default function FAQ() {
             <h2 className="font-asap font-semibold text-xl mb-3 text-almost-black">
               How can I contact you?
             </h2>
-            <p className="text-gray-700 font-mukta-vaani">support@easypz.app</p>
+            <p className="text-gray-700 font-mukta-vaani">
+              <a
+                href="mailto:support@easypz.app"
+                className="text-primary hover:underline"
+              >
+                support@easypz.app
+              </a>
+            </p>
           </div>
         </div>
       </main>
