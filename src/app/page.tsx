@@ -23,7 +23,7 @@ export default function Home() {
             />
           </div>
           <h1 className="hero-title opacity-0 font-raleway font-extrabold italic text-4xl sm:text-5xl mb-3 text-almost-black tracking-[0] leading-tight animate-slide-fade-in">
-            "Hello,
+            "Hello.
             <br />
             This is nature."
           </h1>
@@ -127,7 +127,7 @@ export default function Home() {
         <section className="content-section py-16 text-center">
           <div className="opacity-0" data-animate>
             <Image
-              src="/images/app-demo.png"
+              src="/images/app-demo.gif"
               alt="EasyPZ app interface"
               width={300}
               height={600}
@@ -149,7 +149,7 @@ export default function Home() {
             data-animate
           >
             EasyPZ is 5x faster than Google or Apple Maps.<br></br>Download
-            today and never worry about finding a restroom.
+            today and never worry about finding a restroom.<br></br>It's completely free and no sign-up required!
           </p>
           <div className="flex justify-center gap-4 opacity-0" data-animate>
             <Link
