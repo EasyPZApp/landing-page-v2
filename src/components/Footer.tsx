@@ -28,6 +28,9 @@ export default function Footer() {
 
             {/* Links Section */}
             <div className="flex flex-col items-center md:items-start space-y-1">
+              <Link href="/manifesto" className="hover:text-white/80 transition-colors">
+                Manifesto
+              </Link>
               <Link href="/terms" className="hover:text-white/80 transition-colors">
                 Terms and Conditions
               </Link>

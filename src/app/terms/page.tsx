@@ -1,203 +1,201 @@
 import type { Metadata } from 'next'
-import Navbar from "@/components/Navbar";
-import Footer from "@/components/Footer";
+import Navbar from '@/components/Navbar'
+import Footer from '@/components/Footer'
+import Link from 'next/link'
 
 export const metadata: Metadata = {
+  title: 'Terms & Conditions | EasyPZ',
+  description: 'Read the terms and conditions for using EasyPZ, the app that helps you find clean and accessible restrooms in Berlin & NYC.',
+  openGraph: {
     title: 'Terms & Conditions | EasyPZ',
     description: 'Read the terms and conditions for using EasyPZ, the app that helps you find clean and accessible restrooms in Berlin & NYC.',
-    openGraph: {
-      title: 'Terms & Conditions | EasyPZ',
-      description: 'Read the terms and conditions for using EasyPZ, the app that helps you find clean and accessible restrooms in Berlin & NYC.',
-      url: 'https://easypz.app/terms',
-      siteName: 'EasyPZ',
-      type: 'website',
-    },
-    twitter: {
-      card: 'summary_large_image',
-      title: 'Terms & Conditions | EasyPZ',
-      description: 'Read the terms and conditions for using EasyPZ, the app that helps you find clean and accessible restrooms in Berlin & NYC.',
-    },
-    alternates: {
-      canonical: 'https://easypz.app/terms'
-    }
+    url: 'https://easypz.app/terms',
+    siteName: 'EasyPZ',
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Terms & Conditions | EasyPZ',
+    description: 'Read the terms and conditions for using EasyPZ, the app that helps you find clean and accessible restrooms in Berlin & NYC.',
+  },
+  alternates: {
+    canonical: 'https://easypz.app/terms'
   }
+}
 
 export default function Terms() {
   return (
     <>
       <Navbar />
       <main className="mt-24 mx-auto max-w-3xl px-4 sm:px-6 mb-16">
-        <h1 className="font-asap font-semibold text-3xl mb-8 text-almost-black">
+        <h1 className="font-raleway font-extrabold italic text-3xl mb-8 text-almost-black text-center">
           Terms & Conditions
         </h1>
 
-        <div className="prose prose-lg">
-          <p className="mb-8">Welcome to EasyPZ!</p>
+        <div className="space-y-12 text-gray-700 font-mukta-vaani">
+          <section>
+            <p className="mb-4">Last Updated: December 11, 2024</p>
+            <p className="mb-4">Welcome to EasyPZ. By using our service, you agree to these Terms & Conditions ("Terms"). Please read them carefully.</p>
+          </section>
 
-          <p>
-            These Terms and Conditions ("Terms") govern your access to and use
-            of the EasyPZ mobile application ("App"), including any content,
-            functionality, and services offered on or through the App. By
-            accessing or using the App, you agree to be bound by these Terms, as
-            well as our Privacy Policy, which is incorporated by reference into
-            these Terms.
-          </p>
+          <section>
+            <h2 className="font-asap font-semibold text-2xl mb-4 text-almost-black">1. Service Description</h2>
+            <h3 className="font-asap font-semibold text-lg mb-3 text-almost-black">1.1 Anonymous Users (Basic Service)</h3>
+            <ul className="list-disc ml-6 space-y-2">
+              <li>Temporary location data for facility finding</li>
+              <li>Basic device information</li>
+              <li>Anonymous usage metrics</li>
+              <li>View-only access to public restroom information</li>
+            </ul>
 
-          <h2 className="font-asap font-semibold text-2xl mt-8 mb-4 text-almost-black">
-            App Description
-          </h2>
-          <p>
-            The App is designed to help users locate and access public toilets
-            around the city. It is possible that we may also list toilets owned
-            by businesses. While we strive to provide accurate information, we
-            cannot guarantee the accuracy, completeness, or timeliness of any
-            information contained in the App. We reserve the right to modify or
-            discontinue the App (or any part thereof) at any time without notice
-            to you.
-          </p>
+            <h3 className="font-asap font-semibold text-lg mb-3 mt-6 text-almost-black">1.2 Registered Users (Full Features)</h3>
+            <ul className="list-disc ml-6 space-y-2">
+              <li><span className="font-semibold">Account Information:</span> Email and password</li>
+              <li><span className="font-semibold">Contribution Data:</span> 
+                <ul className="list-disc ml-6 mt-2">
+                  <li>New restroom submissions and locations</li>
+                  <li>Reviews and ratings</li>
+                  <li>Photos and facility descriptions</li>
+                  <li>Updates to existing locations</li>
+                </ul>
+              </li>
+              <li><span className="font-semibold">Profile Data:</span> Optional customization preferences</li>
+              <li><span className="font-semibold">Experience Points (EXP):</span> Activity history and achievements</li>
+              <li><span className="font-semibold">Saved Data:</span> Favorite locations and custom lists</li>
+            </ul>
+          </section>
 
-          <p>Eligibility</p>
-          <p>
-            The App is intended solely for users who are 18 years of age or
-            older. By using the App, you represent and warrant that you are at
-            least 18 years old.
-          </p>
-          <p></p>
-          <p>User Conduct</p>
-          <p>
-            You agree to use the App only for lawful purposes and in accordance
-            with these Terms. You further agree not to use the App:
-          </p>
-          <p>
-            <ul>
-              <li>
-                In any way that violates any applicable federal, state, local,
-                or international law or regulation.
+          <section>
+            <h2 className="font-asap font-semibold text-2xl mb-4 text-almost-black">2. Information Disclaimer</h2>
+            <p className="mb-4">EasyPZ is an information platform that aggregates and shares publicly available information about restroom locations. Important disclaimers:</p>
+            
+            <ul className="list-disc ml-6 space-y-2">
+              <li>All facility information is provided "as is" and for informational purposes only</li>
+              <li>Listing of a facility does not imply any relationship with or endorsement by the facility owner</li>
+              <li>We do not guarantee facility availability, condition, or accessibility</li>
+              <li>Information accuracy may vary and is subject to change without notice</li>
+              <li>Premium locations may have additional access requirements or restrictions</li>
+            </ul>
+          </section>
+
+          <section>
+            <h2 className="font-asap font-semibold text-2xl mb-4 text-almost-black">3. User Responsibilities</h2>
+            <ul className="list-disc ml-6 space-y-2">
+              <li>You are solely responsible for your interactions with facilities and their staff</li>
+              <li>You must comply with all facility policies and local laws</li>
+              <li>You agree not to abuse or misuse the service</li>
+              <li>You will not share false or misleading information</li>
+              <li>You will respect facility owners' rights and property</li>
+            </ul>
+          </section>
+
+          <section>
+            <h2 className="font-asap font-semibold text-2xl mb-4 text-almost-black">4. Business Relationships</h2>
+            <ul className="list-disc ml-6 space-y-2">
+              <li>Businesses may request removal from our database</li>
+              <li>We do not guarantee business hours or policies</li>
+              <li>Premium location partnerships are separate agreements</li>
+              <li>Business dispute resolution process is available</li>
+            </ul>
+          </section>
+
+          <section>
+          <h2 className="font-asap font-semibold text-2xl mb-4 text-almost-black">5. Experience Points (EXP) and Rewards</h2>
+            <ul className="list-disc ml-6 space-y-2">
+              <li>EXP is earned through legitimate app usage and contribution</li>
+              <li>Rewards are subject to availability and may change</li>
+              <li>Premium access may require minimum EXP levels</li>
+              <li>We reserve the right to adjust EXP systems and rewards</li>
+              <li>EXP and rewards have no monetary value and cannot be transferred</li>
+              <li>Attempts to manipulate the EXP system may result in account termination</li>
+            </ul>
+          </section>
+
+          <section>
+            <h2 className="font-asap font-semibold text-2xl mb-4 text-almost-black">6. User Content and Reviews</h2>
+            <ul className="list-disc ml-6 space-y-2">
+              <li>You retain ownership of your content but grant us a license to use it</li>
+              <li>Reviews must be factual and based on personal experience</li>
+              <li>No harassment, hate speech, or inappropriate content</li>
+              <li>We may remove content that violates our guidelines</li>
+              <li>False reviews may result in account termination</li>
+            </ul>
+          </section>
+
+          <section>
+            <h2 className="font-asap font-semibold text-2xl mb-4 text-almost-black">7. Liability and Disclaimers</h2>
+            <ul className="list-disc ml-6 space-y-2">
+              <li>EasyPZ is not responsible for:
+                <ul className="list-disc ml-6 mt-2">
+                  <li>Facility access disputes or denials</li>
+                  <li>User interactions with businesses</li>
+                  <li>Property damage or personal injury</li>
+                  <li>Loss of EXP or rewards due to technical issues</li>
+                  <li>Accuracy of user-submitted content</li>
+                </ul>
               </li>
-              <li>
-                To engage in any conduct that restricts or inhibits anyone's use
-                or enjoyment of the App, or which, as determined by EasyPZ, may
-                harm EasyPZ or users of the App or expose them to liability.
-              </li>
-              <li>
-                To impersonate or attempt to impersonate EasyPZ, an EasyPZ
-                employee, another user, or any other person or entity.
-              </li>
-              <li>
-                To engage in any other conduct that restricts or inhibits
-                anyone's use or enjoyment of the App, or which, as determined by
-                EasyPZ, may harm EasyPZ or users of the App or expose them to
-                liability.
+              <li>We do not guarantee:
+                <ul className="list-disc ml-6 mt-2">
+                  <li>Restroom availability or condition</li>
+                  <li>Premium location access</li>
+                  <li>Continuous service availability</li>
+                  <li>Data accuracy or completeness</li>
+                </ul>
               </li>
             </ul>
-          </p>
-          <p></p>
-          <p>User Content</p>
-          <p>
-            The App may allow you to submit reviews, comments, or other content
-            ("User Content"). You grant EasyPZ a non-exclusive, transferable,
-            sub-licensable, royalty-free, worldwide license to use any User
-            Content that you post on or in connection with the App, subject to
-            our Privacy Policy. You represent and warrant that: (i) you own or
-            control all rights in and to the User Content and have the right to
-            grant the license granted above, and (ii) that the User Content is
-            accurate and not misleading and does not violate these Terms or any
-            applicable law.
-          </p>
-          <p></p>
-          <p>Disclaimer of Warranties</p>
-          <p>
-            THE APP AND ALL INFORMATION, CONTENT, MATERIALS, PRODUCTS, AND
-            SERVICES INCLUDED ON OR OTHERWISE MADE AVAILABLE TO YOU THROUGH THE
-            APP ARE PROVIDED ON AN "AS IS" AND "AS AVAILABLE" BASIS, WITHOUT
-            WARRANTIES OF ANY KIND, EITHER EXPRESS OR IMPLIED, INCLUDING, BUT
-            NOT LIMITED TO, IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A
-            PARTICULAR PURPOSE, OR NONINFRINGEMENT. EASY PZ DOES NOT WARRANT
-            THAT THE APP OR ANY CONTENT, FEATURE, OR FUNCTIONALITY OF THE APP
-            WILL BE UNINTERRUPTED OR ERROR-FREE, THAT DEFECTS WILL BE CORRECTED,
-            OR THAT THE APP OR THE SERVER THAT MAKES IT AVAILABLE ARE FREE OF
-            VIRUSES OR OTHER HARMFUL COMPONENTS. EASY PZ DOES NOT WARRANT OR
-            MAKE ANY REPRESENTATIONS REGARDING THE USE OR THE RESULTS OF THE USE
-            OF THE APP, OR ANY CONTENT, FEATURE, OR FUNCTIONALITY THEREOF, IN
-            TERMS OF THEIR CORRECTNESS, ACCURACY, RELIABILITY, OR OTHERWISE. YOU
-            ACKNOWLEDGE THAT YOUR USE OF THE APP IS AT YOUR SOLE RISK.
-          </p>
-          <p></p>
-          <p>Limitation of Liability</p>
-          <p>
-            IN NO EVENT WILL EASYPZ, ITS AFFILIATES, OR THEIR LICENSORS, SERVICE
-            PROVIDERS, EMPLOYEES, AGENTS, OFFICERS, OR DIRECTORS BE LIABLE FOR
-            DAMAGES OF ANY KIND, UNDER ANY LEGAL THEORY, ARISING OUT OF OR IN
-            CONNECTION WITH YOUR USE, OR INABILITY TO USE, THE APP, ANY APPS
-            LINKED TO IT, ANY CONTENT ON THE APP, OR SUCH OTHER APPS, INCLUDING
-            ANY DIRECT, INDIRECT, SPECIAL, INCIDENTAL, CONSEQUENTIAL, OR
-            PUNITIVE DAMAGES, INCLUDING BUT NOT LIMITED TO, PERSONAL INJURY,
-            PAIN AND SUFFERING, EMOTIONAL DISTRESS, LOSS OF REVENUE, LOSS OF
-            PROFITS, LOSS OF BUSINESS OR ANTICIPATED SAVINGS, LOSS OF USE, LOSS
-            OF GOODWILL, LOSS OF DATA, AND WHETHER CAUSED BY TORT (INCLUDING
-            NEGLIGENCE), BREACH OF CONTRACT, OR OTHERWISE, EVEN IF FORESEEABLE.
-          </p>
-          <p></p>
-          <p>Indemnification</p>
-          <p>
-            You agree to indemnify, defend, and hold harmless EasyPZ, its
-            affiliates, licensors, and service providers, and its and their
-            respective officers, directors, employees, contractors, agents,
-            licensors, suppliers, successors, and assigns from and against any
-            claims, liabilities, damages, judgments, awards, losses, costs,
-            expenses, or fees (including reasonable attorneys' fees) arising out
-            of or relating to your violation of these Terms or your use of the
-            App.
-          </p>
-          <p></p>
-          <p>Dispute Resolution and Arbitration Agreement</p>
-          <p>
-            In the event of any controversy, claim, dispute or disagreement
-            arising out of or relating to these Terms or the use of the App,
-            including but not limited to any claim or dispute regarding the
-            interpretation, applicability, enforceability, or formation of these
-            Terms, the parties shall first attempt in good faith to resolve such
-            controversy, claim, dispute or disagreement by mediation. If the
-            parties are unable to resolve the dispute through mediation, then
-            the dispute shall be resolved exclusively by binding arbitration,
-            conducted by a single arbitrator in accordance with the rules of the
-            American Arbitration Association. The arbitration shall take place
-            in the city or county in which you reside, or in a mutually agreed
-            upon location. The arbitration shall be conducted on an individual
-            basis and not in a class, consolidated or representative action. The
-            arbitrator's decision shall be final and binding. Judgment on the
-            award rendered by the arbitrator may be entered in any court having
-            jurisdiction thereof.
-          </p>
-          <p></p>
-          <p>Governing Law and Venue</p>
-          <p>
-            These Terms shall be governed by and construed in accordance with
-            the laws of the state in which EasyPZ is headquartered, without
-            giving effect to any principles of conflicts of law. Any legal suit,
-            action or proceeding arising out of or relating to these Terms or
-            the App shall be instituted exclusively in the federal or state
-            courts located in the county in which EasyPZ is headquartered.
-          </p>
-          <p></p>
-          <p>Termination</p>
-          <p>
-            EasyPZ may terminate these Terms and your use of the App at any time
-            without notice. Upon termination, you must immediately stop using
-            the App and destroy all copies of the App in your possession.
-          </p>
-          <p></p>
-          <p>Miscellaneous</p>
-          <p>
-            These Terms constitute the entire agreement between you and EasyPZ
-            regarding the use of the App. If any provision of these Terms is
-            held to be invalid or unenforceable, the remaining provisions shall
-            continue to be valid and enforceable. Failure to enforce any
-            provision of these Terms shall not constitute a waiver of such
-            provision or any other provision. These Terms are binding upon and
-            shall inure to the benefit of each party's respective successors and
-            assigns.
-          </p>
+          </section>
+
+          <section>
+            <h2 className="font-asap font-semibold text-2xl mb-4 text-almost-black">8. Account Termination</h2>
+            <ul className="list-disc ml-6 space-y-2">
+              <li>We may suspend or terminate accounts for:
+                <ul className="list-disc ml-6 mt-2">
+                  <li>Terms violations</li>
+                  <li>Abusive behavior</li>
+                  <li>False information</li>
+                  <li>System manipulation</li>
+                  <li>Extended inactivity</li>
+                </ul>
+              </li>
+              <li>Upon termination:
+                <ul className="list-disc ml-6 mt-2">
+                  <li>All EXP and rewards are forfeited</li>
+                  <li>User content remains in the system</li>
+                  <li>Premium access is revoked</li>
+                </ul>
+              </li>
+            </ul>
+          </section>
+
+          <section>
+            <h2 className="font-asap font-semibold text-2xl mb-4 text-almost-black">9. Dispute Resolution</h2>
+            <ul className="list-disc ml-6 space-y-2">
+              <li>All disputes will be resolved through arbitration</li>
+              <li>Users waive rights to class action lawsuits</li>
+              <li>Arbitration will be conducted online when possible</li>
+              <li>Each party bears their own legal costs</li>
+            </ul>
+          </section>
+
+          <section>
+            <h2 className="font-asap font-semibold text-2xl mb-4 text-almost-black">10. Changes to Terms</h2>
+            <p className="mb-4">We may modify these Terms at any time. Changes will be effective upon posting to the Service. Your continued use of EasyPZ after changes constitutes acceptance of the modified Terms.</p>
+          </section>
+
+          <section>
+            <h2 className="font-asap font-semibold text-2xl mb-4 text-almost-black">11. Contact</h2>
+            <p className="mb-4">For questions about these Terms, please contact us at:</p>
+            <p><a href="mailto:support@easypz.app" className="text-primary hover:underline">support@easypz.app</a></p>
+          </section>
+        </div>
+
+        <div className="flex justify-center mt-12">
+          <Link 
+            href="/" 
+            className="font-mukta-vaani px-6 py-3 bg-primary text-white rounded-lg hover:bg-primary/90 transition-colors duration-200 shadow-sm"
+          >
+            Go back to home
+          </Link>
         </div>
       </main>
       <Footer />

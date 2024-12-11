@@ -32,7 +32,7 @@ export default function Home() {
             When nature calls, be ready for it.
           </p>
           <p className="opacity-0 font-mukta-vaani text-xl mb-4 text-gray-700 animate-fade-in-delayed-2">
-            Out now in Berlin & NYC
+            EasyPZ: Restroom Emergency App
           </p>
           <StoreButtons
             className="mb-6"
